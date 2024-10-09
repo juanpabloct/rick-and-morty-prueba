@@ -1,13 +1,13 @@
 import { gql } from '@apollo/client';
 
 const GET_CHARACTERS = gql`
-  query {
-    characters {
+  query Characters($filter: FilterCharacter, $page: Int) {
+    characters(filter: $filter, page: $page) {
       results {
-        id
+        image
         name
         species
-        image
+        id
       }
     }
   }

@@ -9,6 +9,7 @@ const Character = lazy(() => import('./pages/[Character]/Character'));
 import './App.css';
 import connection from './connection';
 import { ApolloProvider } from '@apollo/client';
+import { ContextStarred } from './context/ContextStarred';
 
 const Routes = () => {
   const router = createBrowserRouter([
@@ -31,7 +32,9 @@ const Routes = () => {
   ]);
   return (
     <ApolloProvider client={connection}>
-      <RouterProvider router={router} />
+      <ContextStarred>
+        <RouterProvider router={router} />
+      </ContextStarred>
     </ApolloProvider>
   );
 };
