@@ -55,92 +55,94 @@ const MoreFilters = (props: { search: string }) => {
           showOtherFilters ? 'visible' : 'invisible'
         }`}
       >
-        <div className='absolute top-14 left-0 w-full bg-white z-10 p-6 flex flex-col gap-6 rounded-md'>
-          <div className='flex flex-col gap-1'>
-            <p className='mb-1'>Character</p>
-            <div className='flex gap-2'>
-              <div className='option'>
-                <input
-                  type='radio'
-                  name='character'
-                  id='all'
-                  value={'all'}
-                  onChange={onChangeInformation}
-                  defaultChecked={information.character === 'all'}
-                />
-                <label className='text-sm font-semibold' htmlFor='all'>
-                  All
-                </label>
-              </div>
-              <div className='option'>
-                <input
-                  type='radio'
-                  name='character'
-                  id='starred'
-                  value={'Starred'}
-                  defaultChecked={information.character === 'Starred'}
-                  onChange={onChangeInformation}
-                />
-                <label className='text-sm font-semibold' htmlFor='starred'>
-                  Starred
-                </label>
-              </div>
-              <div className='option'>
-                <input
-                  type='radio'
-                  name='character'
-                  id='others'
-                  value={'Others'}
-                  defaultChecked={information.character === 'Others'}
-                  onChange={onChangeInformation}
-                />
-                <label className='text-sm font-semibold' htmlFor='others'>
-                  Others
-                </label>
+        <div className='absolute top-14 left-0 w-full bg-white z-10 p-6 flex flex-col gap-6 rounded-md h-[80vh] md:h-auto justify-between md:justify-normal'>
+          <div className='flex flex-col gap-6'>
+            <div className='flex flex-col gap-1'>
+              <p className='mb-1'>Character</p>
+              <div className='flex gap-2'>
+                <div className='option'>
+                  <input
+                    type='radio'
+                    name='character'
+                    id='all'
+                    value={'all'}
+                    onChange={onChangeInformation}
+                    defaultChecked={information.character === 'all'}
+                  />
+                  <label className='text-sm font-semibold' htmlFor='all'>
+                    All
+                  </label>
+                </div>
+                <div className='option'>
+                  <input
+                    type='radio'
+                    name='character'
+                    id='starred'
+                    value={'Starred'}
+                    defaultChecked={information.character === 'Starred'}
+                    onChange={onChangeInformation}
+                  />
+                  <label className='text-sm font-semibold' htmlFor='starred'>
+                    Starred
+                  </label>
+                </div>
+                <div className='option'>
+                  <input
+                    type='radio'
+                    name='character'
+                    id='others'
+                    value={'Others'}
+                    defaultChecked={information.character === 'Others'}
+                    onChange={onChangeInformation}
+                  />
+                  <label className='text-sm font-semibold' htmlFor='others'>
+                    Others
+                  </label>
+                </div>
               </div>
             </div>
-          </div>
-          <div className='flex flex-col gap-1 '>
-            <p className='mb-1'>Specie</p>
-            <div className='flex gap-2'>
-              <div className='option'>
-                <input
-                  type='radio'
-                  name='specie'
-                  id='all'
-                  value={'all'}
-                  defaultChecked={information.specie === 'all'}
-                  onChange={onChangeInformation}
-                />
-                <label className='text-sm font-semibold' htmlFor='all'>
-                  All
-                </label>
-              </div>
-              <div className='option'>
-                <input
-                  type='radio'
-                  name='specie'
-                  id='Human'
-                  value={'Human'}
-                  defaultChecked={information.specie === 'Human'}
-                  onChange={onChangeInformation}
-                />
-                <label className='text-sm font-semibold' htmlFor='Human'>
-                  Human
-                </label>
-              </div>
-              <div className='option'>
-                <input
-                  type='radio'
-                  name='specie'
-                  id='Alien'
-                  value={'Alien'}
-                  defaultChecked={information.specie === 'Alien'}
-                  onChange={onChangeInformation}
-                />
-                <label className='text-sm font-semibold' htmlFor='Alien'>
-                  Alien
-                </label>
+            <div className='flex flex-col gap-1 '>
+              <p className='mb-1'>Specie</p>
+              <div className='flex gap-2'>
+                <div className='option'>
+                  <input
+                    type='radio'
+                    name='specie'
+                    id='all'
+                    value={'all'}
+                    defaultChecked={information.specie === 'all'}
+                    onChange={onChangeInformation}
+                  />
+                  <label className='text-sm font-semibold' htmlFor='all'>
+                    All
+                  </label>
+                </div>
+                <div className='option'>
+                  <input
+                    type='radio'
+                    name='specie'
+                    id='Human'
+                    value={'Human'}
+                    defaultChecked={information.specie === 'Human'}
+                    onChange={onChangeInformation}
+                  />
+                  <label className='text-sm font-semibold' htmlFor='Human'>
+                    Human
+                  </label>
+                </div>
+                <div className='option'>
+                  <input
+                    type='radio'
+                    name='specie'
+                    id='Alien'
+                    value={'Alien'}
+                    defaultChecked={information.specie === 'Alien'}
+                    onChange={onChangeInformation}
+                  />
+                  <label className='text-sm font-semibold' htmlFor='Alien'>
+                    Alien
+                  </label>
+                </div>
               </div>
             </div>
           </div>
