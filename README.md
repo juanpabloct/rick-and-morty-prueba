@@ -1,50 +1,66 @@
-# React + TypeScript + Vite
+# Proyecto de Búsqueda de Personajes - Rick and Morty
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web de búsqueda de personajes de la serie **Rick and Morty**, creada con **React** y **Vite**. Permite realizar búsquedas utilizando la API de Rick and Morty con filtrado de nombres y más.
 
-Currently, two official plugins are available:
+## Tabla de Contenidos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. [Instalación](#instalación)
+2. [Scripts Disponibles](#scripts-disponibles)
+3. [Dependencias](#dependencias)
+4. [Estructura del Proyecto](#estructura-del-proyecto)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalación
 
-- Configure the top-level `parserOptions` property like this:
+Para instalar este proyecto en tu máquina local, sigue los pasos a continuación:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/juanpabloct/rick-and-morty-prueba
+   ```
+
+2. Navega dentro del directorio del proyecto:
+   `cd rick-and-morty-prueba`
+
+3. Instala las dependencias necesarias con npm o yarn:
+
+```
+  npm install
+  # o
+  yarn install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Scripts Disponibles
+En este proyecto, puedes ejecutar los siguientes scripts:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+npm run dev
+Este comando ejecuta la aplicación en modo de desarrollo. Abre http://localhost:5173 para verla en tu navegador.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+La página se recargará si haces ediciones en el código.
+
+npm run dev
+
+npm run build
+Construye la aplicación para producción dentro de la carpeta dist/. Este comando empaqueta tu aplicación de la manera más eficiente para su despliegue.
+
+npm run build
+
+npm run preview
+Sirve para previsualizar la aplicación construida después de ejecutar el comando build. Útil para asegurarte de que todo funciona correctamente antes de desplegar.
+
+npm run preview
+
+4. Estructura del Proyecto
+   La estructura de carpetas del proyecto es la siguiente:
+
+├── public/ # Archivos públicos
+├── src/
+│ ├── assets/ # Imágenes e íconos
+│ ├── components/ # Componentes reutilizables
+│ ├── hooks/ # Custom Hooks
+│ ├── pages/ # Páginas principales
+│ ├── App.tsx # Componente principal
+│ ├── main.tsx # Punto de entrada de la aplicación
+└── package.json # Archivo de configuración de npm
