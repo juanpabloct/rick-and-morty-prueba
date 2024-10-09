@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h2 {
+        @apply text-secondary;
+        @apply text-xs;
+        @apply font-semibold;
+        line-height: 16px;
+        letter-spacing: 5%
+    }
+
+    h3 {
+        @apply text-primary;
+        @apply font-semibold;
+        @apply text-base;
+        line-height: 20.88px;
+    }
+
+}
