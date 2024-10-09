@@ -21,8 +21,12 @@ Para instalar este proyecto en tu máquina local, sigue los pasos a continuació
    git clone https://github.com/juanpabloct/rick-and-morty-prueba
    ```
 
+## Scripts Disponibles
+
 2. Navega dentro del directorio del proyecto:
    `cd rick-and-morty-prueba`
+
+## Dependencias
 
 3. Instala las dependencias necesarias con npm o yarn:
 
@@ -57,6 +61,8 @@ Sirve para previsualizar la aplicación construida después de ejecutar el coman
 
 npm run preview
 ```
+
+## Estructura del Proyecto
 
 4. Estructura del Proyecto
 
