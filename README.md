@@ -35,24 +35,32 @@ Para instalar este proyecto en tu máquina local, sigue los pasos a continuació
 Scripts Disponibles
 En este proyecto, puedes ejecutar los siguientes scripts:
 
+```
 npm run dev
 Este comando ejecuta la aplicación en modo de desarrollo. Abre http://localhost:5173 para verla en tu navegador.
 
 La página se recargará si haces ediciones en el código.
 
 npm run dev
+```
 
+```
 npm run build
 Construye la aplicación para producción dentro de la carpeta dist/. Este comando empaqueta tu aplicación de la manera más eficiente para su despliegue.
 
 npm run build
+```
 
+```
 npm run preview
 Sirve para previsualizar la aplicación construida después de ejecutar el comando build. Útil para asegurarte de que todo funciona correctamente antes de desplegar.
 
 npm run preview
+```
 
 4. Estructura del Proyecto
+
+```
    La estructura de carpetas del proyecto es la siguiente:
 
 ├── public/ # Archivos públicos
@@ -64,3 +72,4 @@ npm run preview
 │ ├── App.tsx # Componente principal
 │ ├── main.tsx # Punto de entrada de la aplicación
 └── package.json # Archivo de configuración de npm
+```
